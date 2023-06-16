@@ -107,14 +107,14 @@ function renderTaskList() {
         listItem.appendChild(finishButton);
 
         const editButton = createButton(
-            'Edit',
+            'edit',
             'Edit',
             'edit-button',
             () => editTask(index));
         listItem.appendChild(editButton);
 
         const saveButton = createButton(
-            'Save',
+            'save',
             'Save',
             'save-button',
             null);
@@ -122,7 +122,7 @@ function renderTaskList() {
         listItem.appendChild(saveButton);
 
         const cancelButton = createButton(
-            'Cancel',
+            'cancel',
             'Cancel',
             'cancel-button',
             null);
@@ -130,7 +130,7 @@ function renderTaskList() {
         listItem.appendChild(cancelButton);
 
         const deleteButton = createButton(
-            'Delete',
+            'delete',
             'Delete',
             'delete-button',
             () => deleteTask(index));
