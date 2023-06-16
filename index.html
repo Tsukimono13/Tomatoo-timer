@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Pomodoro timer with todolist">
+    <meta name="keywords" content="pomodoro, timer, todolist, todo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/timer.styles.css">
+    <link rel="stylesheet" href="styles/todolist.styles.css">
+
+    <title>Tomatoo</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-wrapper">
+            <img src="assets/logo.svg" alt="logo">
+            <img src="assets/settings.svg" alt="settings button">
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="cards-wrap">
+            <div class="bg-img bg-img1"></div>
+            <div class="card">
+                <div id="timer">25:00</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <p class="description">Time to focus</p>
+            </div>
+        </div>
+        <div class="timer-buttons">
+            <button id="timer25">Pomodoro</button>
+            <button id="timer5">Short Break</button>
+            <button id="timer15">Long Break</button>
+        </div>
+        <div class="control-buttons">
+            <img id="stop" src="assets/stop.svg" alt="repeat"/>
+            <button id="start">Start</button>
+            <img id="next" src="assets/next.svg" alt="next"/>
+        </div>
+        <div class="todolistContainer">
+            <div class="task-list">
+                <input type="text" id="taskInput" placeholder="Type the name of task">
+                <button class="addButton" onclick="addTask()" onmouseover="changeImg('assets/icons/addHover.svg')"
+                        onmouseout="changeImg('assets/icons/add.svg')">
+                    <img src="assets/icons/add.svg" alt="add button" id="addButtonImg"/>
+                </button>
+            </div>
+            <div>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="app/timers.js" async></script>
+<script src="app/styles.js" async></script>
+<script src="app/todolist.js" async></script>
+</body>
+</html>
