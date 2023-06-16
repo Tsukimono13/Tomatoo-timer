@@ -49,15 +49,15 @@ header {
 }
 
 .bg-img1 {
-    background-image: url("clock.png");
+    background-image: url("../assets/images/clock.png");
 }
 
 .bg-img2 {
-    background-image: url("assets/image/cup.png");
+    background-image: url("../assets/images/cup.png");
 }
 
 .bg-img3 {
-    background-image: url("../../assets/image/coffee.png");
+    background-image: url("../assets/images/coffee.png");
 }
 
 @keyframes updown {
